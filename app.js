@@ -47,4 +47,16 @@ let CheckWinner = ()=>{
     }
 }
 
+let gameWinner = (winn)=>{
+   msg.classList.remove('hide')
+   msg.innerText = `Congratulations You Win, ${winn}`
+   disabledAll()
+}
+
+let disabledAll =()=>{
+    for(let btn of boxes){
+        btn.disabled = true
+    }
+}
+
 
