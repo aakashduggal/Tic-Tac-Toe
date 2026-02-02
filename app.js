@@ -60,3 +60,17 @@ let disabledAll =()=>{
 }
 
 
+let enableBox = ()=>{
+    for(let box of boxes){
+        msg.classList.add('hide')
+        turn0 = true
+        box.disabled = false
+        box.innerText = ''
+    }
+}
+
+
+
+
+reset.addEventListener('click', enableBox)
+
